@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* the above is NOT my code*/
+
+
+
+
+/*universal*/
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+	color:darkblue;
+}
+body{
+	background-color: whitesmoke; /*replace with image of stars	
+	background-image: url("backgroundImages/ivana-cajina-asuyh-_ZX54-unsplash.jpg");*/
+}
+#heroImage{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("testImage.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/*header*/
+header h1, header h2{
+	background-color: black;
+	background-image: url("backgroundImages/ivana-cajina-asuyh-_ZX54-unsplash.jpg");
+	color: aliceblue;
+	padding: 0.5em 1em;
+}
+header a{
+	color: aliceblue;
+}
+header h1{
+	text-align: center;
+	font-size: 5em;
+}
+header h2{
+	text-align: center;
+}
+header ul{
+	background-color: cornflowerblue;
+}
+header li{
+	display: inline-block;
+	text-align: center;
+	padding: 1em 3em;
+}
+
+
+
+/*main*/
+main{
+	/*top right bottom left*/
+	border:solid 10px green;
+	margin: auto;
+	min-height: 50em;
+	width: 85%;
+
+}
+main section{
+	margin: auto;
+	min-height: 15em;
+	min-width: 50em;
+	max-width: 60em;
+	background-color: azure;	
+}
+
+main section h2{
+	text-align: center;
+	width: 12em;
+	border-top: solid 1px cornflowerblue;
+	border-bottom: solid 1px cornflowerblue;
+}
+
+/*article*/
+main section article{
+	padding: 1em;
+}
+main section article h2{
+	font-size: 1.5em;
+	margin: auto;
+	width: 30em;
+	border: none;
+}
+main section article h3{
+	text-align: center;
+	margin: auto;
+	width: 20em;
+}
+
+
+/*aside*/
+aside{
+	background-color: aliceblue;
+	float: right;
+	height: 100%;
+	margin-left: 3em;
+	width: 10em;
+}
+aside h2{
+	border-bottom: solid 1px cornflowerblue;
+	display: block;
+}
+aside ul{
+	margin-bottom: 1em;
+}
+
+footer{
+	background-color: cornflowerblue;
+	bottom: 0;
+}
